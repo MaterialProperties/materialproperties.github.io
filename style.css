@@ -1,0 +1,182 @@
+.body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: Monaco, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  min-height: 100vh;
+}
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 1px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.content-description {
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.content {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#search {
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  width: 500px;
+  outline: none;
+}
+
+#search:focus {
+  border-color: #140303;
+}
+
+
+#searchButton,
+#clearButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #080808;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+
+.search-results-box {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.search-results-box h3 {
+  margin-top: 0;
+  padding: 10px;
+  background-color: #010f01;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.search-results {
+  background-color: #bed3cc00;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.search-results ul {
+  list-style: none; 
+  padding-left: 0;
+}
+
+.search-results p {
+  font-family: "Consolas";
+  color: #000000;
+}
+
+.navigation {
+  background-color: #000000;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(253, 253, 253, 0.1);
+  text-align: center;
+  border-radius: 5px;
+  
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: #ffffff7a;
+}
+
+#searchButton {
+  margin-right: 5px;
+}
+
+#clearButton {
+  margin-left: 5px;
+  background-color: #000000;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+li {
+  animation: fadeIn 1s;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.fade-out {
+  animation: fadeOut 1s;
+}
+html {
+  scroll-behavior: smooth;
+}
